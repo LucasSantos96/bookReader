@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="script/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <title>Book Reader</title>
+</head>
+<body>
+    <header>
+    <h1>Leitor digital</h1>
+    <button id="toggleTheme">🌙</button>
+    </header>
+        <div class="reader-container">
+            <div class="controls">
+                <div class="file-input-button">
+                <input type="file" id="pdfInput" accept=".pdf" />
+                <label for="pdfInput" class="custom-file-button"> <i> <img src="icons/1486485588-add-create-new-math-sign-cross-plus_81186.png" alt=""></i> Carregar PDF</label>
+            </div>
+                <div class="buttons-controls">
+                <button id="decreaseFont"><i><img class="decrease-font" src="icons/3844465-magnifier-out-plus-search-zoom_110340.ico" alt=""></i></button>
+                <button id="increaseFont"><i><img class="increase-font" src="icons/3844466-in-magnifier-plus-search-zoom_110347 (1).ico" alt="plus"></i></button>
+            </div>
+            </div>
+            <div class="book-content" id="bookContent">
+                <canvas id="pdfCanvas"></canvas>
+            </div>
+            <div class="navigation">
+                <button id="prevPage">← Página Anterior</button>
+                <span id="pageNumber"> Página1</span>
+                <button id="nextPage">Página Seguinte →</button>
+            </div>
+    </div>       
+</body>
+</html>
